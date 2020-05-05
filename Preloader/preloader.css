@@ -1,0 +1,384 @@
+body {
+  background-color: #333;
+}
+
+#preloader {
+  width: 70vmin;
+  height: 70vmin;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 100%;
+}
+
+#preloader > div {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 100%;
+}
+
+#preloader > div:nth-child(1) {
+  width: 32.33333%;
+  height: 32.33333%;
+  border: 2px solid #00fafa;
+}
+
+#preloader > div:nth-child(2) {
+  width: 34.66667%;
+  height: 34.66667%;
+  border: 2px solid #00f6f6;
+}
+
+#preloader > div:nth-child(3) {
+  width: 37%;
+  height: 37%;
+  border: 2px solid #00f1f1;
+  border-right-color: transparent;
+  -webkit-animation: rot-r 3.5s infinite;
+          animation: rot-r 3.5s infinite;
+}
+
+#preloader > div:nth-child(4) {
+  width: 39.33333%;
+  height: 39.33333%;
+  border: 2px solid #00eded;
+}
+
+#preloader > div:nth-child(5) {
+  width: 41.66667%;
+  height: 41.66667%;
+  border: 2px solid #00e8e8;
+  border-left-color: transparent;
+  -webkit-animation: rot-r 1.5s infinite;
+          animation: rot-r 1.5s infinite;
+}
+
+#preloader > div:nth-child(6) {
+  width: 44%;
+  height: 44%;
+  border: 2px solid #00e3e3;
+  border-right-color: transparent;
+  -webkit-animation: rot-r 3.5s infinite;
+          animation: rot-r 3.5s infinite;
+}
+
+#preloader > div:nth-child(7) {
+  width: 46.33333%;
+  height: 46.33333%;
+  border: 2px solid #00dfdf;
+  border-bottom-color: transparent;
+  -webkit-animation: rot 2s infinite;
+          animation: rot 2s infinite;
+}
+
+#preloader > div:nth-child(8) {
+  width: 48.66667%;
+  height: 48.66667%;
+  border: 2px solid #00dada;
+}
+
+#preloader > div:nth-child(9) {
+  width: 51%;
+  height: 51%;
+  border: 2px solid #00d6d6;
+  border-top-color: transparent;
+  -webkit-animation: rot 3s infinite;
+          animation: rot 3s infinite;
+  border-right-color: transparent;
+  -webkit-animation: rot-r 3.5s infinite;
+          animation: rot-r 3.5s infinite;
+}
+
+#preloader > div:nth-child(10) {
+  width: 53.33333%;
+  height: 53.33333%;
+  border: 2px solid #00d1d1;
+  border-left-color: transparent;
+  -webkit-animation: rot-r 1.5s infinite;
+          animation: rot-r 1.5s infinite;
+}
+
+#preloader > div:nth-child(11) {
+  width: 55.66667%;
+  height: 55.66667%;
+  border: 2px solid #00cdcd;
+}
+
+#preloader > div:nth-child(12) {
+  width: 58%;
+  height: 58%;
+  border: 2px solid #00c8c8;
+  border-right-color: transparent;
+  -webkit-animation: rot-r 3.5s infinite;
+          animation: rot-r 3.5s infinite;
+}
+
+#preloader > div:nth-child(13) {
+  width: 60.33333%;
+  height: 60.33333%;
+  border: 2px solid #00c3c3;
+}
+
+#preloader > div:nth-child(14) {
+  width: 62.66667%;
+  height: 62.66667%;
+  border: 2px solid #00bfbf;
+  border-bottom-color: transparent;
+  -webkit-animation: rot 2s infinite;
+          animation: rot 2s infinite;
+}
+
+#preloader > div:nth-child(15) {
+  width: 65%;
+  height: 65%;
+  border: 2px solid #00baba;
+  border-left-color: transparent;
+  -webkit-animation: rot-r 1.5s infinite;
+          animation: rot-r 1.5s infinite;
+  border-right-color: transparent;
+  -webkit-animation: rot-r 3.5s infinite;
+          animation: rot-r 3.5s infinite;
+}
+
+#preloader > div:nth-child(16) {
+  width: 67.33333%;
+  height: 67.33333%;
+  border: 2px solid #00b6b6;
+}
+
+#preloader > div:nth-child(17) {
+  width: 69.66667%;
+  height: 69.66667%;
+  border: 2px solid #00b1b1;
+}
+
+#preloader > div:nth-child(18) {
+  width: 72%;
+  height: 72%;
+  border: 2px solid #00acac;
+  border-top-color: transparent;
+  -webkit-animation: rot 3s infinite;
+          animation: rot 3s infinite;
+  border-right-color: transparent;
+  -webkit-animation: rot-r 3.5s infinite;
+          animation: rot-r 3.5s infinite;
+}
+
+#preloader > div:nth-child(19) {
+  width: 74.33333%;
+  height: 74.33333%;
+  border: 2px solid #00a8a8;
+}
+
+#preloader > div:nth-child(20) {
+  width: 76.66667%;
+  height: 76.66667%;
+  border: 2px solid #00a3a3;
+  border-left-color: transparent;
+  -webkit-animation: rot-r 1.5s infinite;
+          animation: rot-r 1.5s infinite;
+}
+
+#preloader > div:nth-child(21) {
+  width: 79%;
+  height: 79%;
+  border: 2px solid #009f9f;
+  border-bottom-color: transparent;
+  -webkit-animation: rot 2s infinite;
+          animation: rot 2s infinite;
+  border-right-color: transparent;
+  -webkit-animation: rot-r 3.5s infinite;
+          animation: rot-r 3.5s infinite;
+}
+
+#preloader > div:nth-child(22) {
+  width: 81.33333%;
+  height: 81.33333%;
+  border: 2px solid #009a9a;
+}
+
+#preloader > div:nth-child(23) {
+  width: 83.66667%;
+  height: 83.66667%;
+  border: 2px solid #009595;
+}
+
+#preloader > div:nth-child(24) {
+  width: 86%;
+  height: 86%;
+  border: 2px solid #009191;
+  border-right-color: transparent;
+  -webkit-animation: rot-r 3.5s infinite;
+          animation: rot-r 3.5s infinite;
+}
+
+#preloader > div:nth-child(25) {
+  width: 88.33333%;
+  height: 88.33333%;
+  border: 2px solid #008c8c;
+  border-left-color: transparent;
+  -webkit-animation: rot-r 1.5s infinite;
+          animation: rot-r 1.5s infinite;
+}
+
+#preloader > div:nth-child(26) {
+  width: 90.66667%;
+  height: 90.66667%;
+  border: 2px solid #008888;
+}
+
+#preloader > div:nth-child(27) {
+  width: 93%;
+  height: 93%;
+  border: 2px solid #008383;
+  border-top-color: transparent;
+  -webkit-animation: rot 3s infinite;
+          animation: rot 3s infinite;
+  border-right-color: transparent;
+  -webkit-animation: rot-r 3.5s infinite;
+          animation: rot-r 3.5s infinite;
+}
+
+#preloader > div:nth-child(28) {
+  width: 95.33333%;
+  height: 95.33333%;
+  border: 2px solid #007e7e;
+  border-bottom-color: transparent;
+  -webkit-animation: rot 2s infinite;
+          animation: rot 2s infinite;
+}
+
+#preloader > div:nth-child(29) {
+  width: 97.66667%;
+  height: 97.66667%;
+  border: 2px solid #007a7a;
+}
+
+#preloader > div:nth-child(30) {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #007575;
+  border-left-color: transparent;
+  -webkit-animation: rot-r 1.5s infinite;
+          animation: rot-r 1.5s infinite;
+  border-right-color: transparent;
+  -webkit-animation: rot-r 3.5s infinite;
+          animation: rot-r 3.5s infinite;
+}
+
+#preloader:hover > div {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+#preloader > div > div {
+  color: #FFF;
+  font-size: 5vmin;
+  text-align: center;
+  margin-top: 3.375vmin;
+}
+
+#preloader > div > div::before {
+  content: "";
+  display: block;
+  width: 13vmin;
+  height: 2.5vmin;
+  background-color: #FFF;
+  -webkit-transform: translateY(10vmin) translateX(5vmin);
+          transform: translateY(10vmin) translateX(5vmin);
+}
+
+#preloader > div > div::after {
+  content: "";
+  display: block;
+  -webkit-animation: line 5s 1;
+          animation: line 5s 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes rot {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
+
+@keyframes rot {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
+
+@-webkit-keyframes rot-r {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(-1turn);
+            transform: rotate(-1turn);
+  }
+}
+
+@keyframes rot-r {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(-1turn);
+            transform: rotate(-1turn);
+  }
+}
+
+@-webkit-keyframes line {
+  from {
+    width: 0;
+    height: 2.5vmin;
+    background-color: cyan;
+    -webkit-transform: translateY(1.65vmin) translateX(5vmin);
+            transform: translateY(1.65vmin) translateX(5vmin);
+  }
+  to {
+    width: 13vmin;
+    height: 2.5vmin;
+    background-color: cyan;
+    -webkit-transform: translateY(1.65vmin) translateX(5vmin);
+            transform: translateY(1.65vmin) translateX(5vmin);
+  }
+}
+
+@keyframes line {
+  from {
+    width: 0;
+    height: 2.5vmin;
+    background-color: cyan;
+    -webkit-transform: translateY(1.65vmin) translateX(5vmin);
+            transform: translateY(1.65vmin) translateX(5vmin);
+  }
+  to {
+    width: 13vmin;
+    height: 2.5vmin;
+    background-color: cyan;
+    -webkit-transform: translateY(1.65vmin) translateX(5vmin);
+            transform: translateY(1.65vmin) translateX(5vmin);
+  }
+}
+/*# sourceMappingURL=preloader.css.map */

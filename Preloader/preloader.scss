@@ -1,0 +1,112 @@
+$colorDark: #333;
+$colorLight: cyan;
+$colorText: #FFF;
+$size: 70vmin;
+$size-small: 30%;
+$size-border: 2px;
+$pseudo-w: 13vmin;
+$pseudo-h: 2.5vmin;
+$count: 30;
+
+body{
+    background-color: $colorDark;
+}
+
+#preloader{
+    width: $size;
+    height: $size;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 100%;
+}
+#preloader>div{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 100%;
+    $offset: ( 100% - $size-small ) / $count;
+
+    @for $n from 1 through 30{
+       
+        &:nth-child(#{$n}){
+            width: $size-small + $n * $offset;
+            height: $size-small + $n * $offset;
+            border: $size-border solid darken($colorLight, 0.9% * $n);
+
+            @if $n % 9 == 0{
+                border-top-color: transparent;
+                animation: rot 3s infinite;
+            }
+
+            @if $n % 7 == 0{
+                border-bottom-color: transparent;
+                animation: rot 2s infinite;
+            }
+
+            @if $n %5 == 0{
+                border-left-color: transparent;
+                animation: rot-r 1.5s infinite;
+            }
+
+            @if $n % 3 == 0{
+                border-right-color: transparent;
+                animation: rot-r 3.5s infinite;
+            }
+        }
+    }  
+}
+#preloader:hover>div{
+    animation-play-state: paused;
+}
+#preloader>div>div{
+    $margin: (70vmin / 100 * 30 - 5vmin - 2.5vmin) / 4;
+    color: $colorText;
+    font-size: 5vmin;
+    text-align: center;
+    margin-top: $margin;
+}
+#preloader>div>div::before{
+    content: "";
+    display: block;;
+    width: $pseudo-w;
+    height: $pseudo-h;
+    background-color: $colorText;
+    transform: translateY(10vmin) translateX(5vmin);
+}
+#preloader>div>div::after{
+    content: "";
+    display: block;;
+    animation: line 5s 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes rot{
+    from{transform: rotate(0);}
+    to{transform: rotate(1turn);}
+}
+
+@keyframes rot-r{
+    from{transform: rotate(0);}
+    to{transform: rotate(-1turn);}
+}
+@keyframes line{
+    from{
+        width: 0;
+        height: $pseudo-h;
+        background-color: $colorLight;
+        transform: translateY(1.65vmin) translateX(5vmin);
+    }
+    to{
+        width: $pseudo-w;
+        height: $pseudo-h;
+        background-color: $colorLight;
+        transform: translateY(1.65vmin) translateX(5vmin);
+    }
+}
